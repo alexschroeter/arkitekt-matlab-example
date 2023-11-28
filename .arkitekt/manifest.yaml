@@ -1,0 +1,7 @@
+author: Alexander Wilhelmi
+entrypoint: app
+identifier: arkitekt-matlab-example
+requirements: []
+scopes:
+- read
+version: 0.0.1
