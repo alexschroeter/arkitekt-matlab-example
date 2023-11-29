@@ -7,7 +7,7 @@ RUN apt update && \
 	apt install -y libgl1
 
 # ToDo Do we really need all of them?
-RUN pip install arkitekt semver rich_click rekuest
+
 
 RUN cd /tmp && \
 	wget https://ssd.mathworks.com/supportfiles/downloads/R2023b/Release/4/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2023b_Update_4_glnxa64.zip && \
@@ -25,3 +25,11 @@ ENV XAPPLRESDIR /etc/X11/app-defaults
 
 # ToDo check if this is really needed
 ENV MCR_MASTER_PATH /usr/local/MATLAB/MATLAB_Runtime/R2023b
+
+
+WORKDIR /home
+
+RUN pip install "arkitekt[all]"
+
+
+COPY . /home
