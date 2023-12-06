@@ -3,10 +3,10 @@ import time
 import magicapp
 
 @register
-def magicapp(n: int = 10) -> str:
+def magic(n: int = 10) -> str:
     """Generate N Strings
 
-    This function generates {{n}} strings with a {{timeout}} ms timeout between each string
+    This function prints a matrix with dimensions {{n}} x {{n}}.
 
 
     Parameters
@@ -20,7 +20,6 @@ def magicapp(n: int = 10) -> str:
         A string with a random matrix of size n x n.
     """
     app = magicapp.initialize()
-    result = app.mymagic(5)
-    yield f"{result}"
+    result = app.mymagic(n)
     app.exit()
-
+    return f"{result}"

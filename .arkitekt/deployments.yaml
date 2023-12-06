@@ -14,4 +14,19 @@ deployments:
     scopes:
     - read
     version: 0.0.1
-latest_deployment: '2023-12-06T09:48:32.729158'
+- build_id: fd8f6fa0-c712-41d9-b674-3262dcc9dedd
+  builder: arkitekt.builders.port
+  definitions: []
+  deployed_at: '2023-12-06T11:00:33.595526'
+  deployment_id: 39da4c2c-d4fa-4ab8-b04a-b54c5bf606e0
+  image: alexanderschroeter/arkitekt-matlab-example:0.1.0
+  manifest:
+    author: Alexander Wilhelmi
+    created_at: '2023-12-06T10:41:54.427424'
+    entrypoint: app
+    identifier: arkitekt-matlab-example
+    requirements: []
+    scopes:
+    - read
+    version: 0.1.0
+latest_deployment: '2023-12-06T11:00:33.596913'
