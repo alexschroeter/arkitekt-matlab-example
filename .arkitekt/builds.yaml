@@ -19,8 +19,18 @@ builds:
     scopes:
     - read
     version: 0.0.1
+- build_id: ba59a150-ca73-4510-b757-c4adfe56dd43
+  builder: arkitekt.builders.port
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: arkitekt-matlab-example
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
 latest_build:
-  build_id: 61a0158c-f8b7-4352-a773-d47b14ae8d5b
+  build_id: ba59a150-ca73-4510-b757-c4adfe56dd43
   builder: arkitekt.builders.port
   manifest:
     author: Alexander Wilhelmi
